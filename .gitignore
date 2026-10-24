@@ -28,3 +28,6 @@ TestResults/
 **/*.pfx
 **/*.p12
 **/*.key
+
+# Local development notes (public project introduction is README.md)
+/docs/DEVELOPMENT.md
