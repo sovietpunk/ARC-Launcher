@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Core/ARC.Launcher.Core.csproj" />
+  <Project Path="CLI/ARC.Launcher.CLI.csproj" />
+  <Project Path="Tests/ARC.Launcher.Tests.csproj" />
+  <Folder Name="/Desktop/" />
+</Solution>

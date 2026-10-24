@@ -1,0 +1,30 @@
+.minecraft/
+**/bin/
+**/obj/
+.tools/
+.test-work/
+.vs/
+.idea/
+TestResults/
+*.user
+*.DotSettings.user
+*.suo
+*.log
+*.binlog
+.env
+.env.*
+**/launcher_accounts.json
+**/launcher_profiles.json
+**/usercache.json
+**/PCL/
+**/secrets.json
+
+# ARC Launcher runtime
+**/.arc-launcher/
+**/crash-reports/
+**/logs/
+
+# Local credentials
+**/*.pfx
+**/*.p12
+**/*.key

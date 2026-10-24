@@ -1,0 +1,11 @@
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <PropertyGroup><OutputType>Exe</OutputType><IsTestProject>false</IsTestProject></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Core/ARC.Launcher.Core.csproj" /></ItemGroup>
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <!-- Offline assertion runner. dotnet test invokes this target without a NuGet adapter. -->
+  <Target Name="VSTest" DependsOnTargets="Build">
+    <PropertyGroup><TestDotnetHost>$([System.IO.Path]::GetFullPath('$(MSBuildToolsPath)/../../dotnet.exe'))</TestDotnetHost></PropertyGroup>
+    <Exec Command="&quot;$(TestDotnetHost)&quot; &quot;$(TargetPath)&quot;" />
+  </Target>
+</Project>
